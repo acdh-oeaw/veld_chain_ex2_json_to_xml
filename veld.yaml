@@ -9,7 +9,7 @@ services:
       file: ./veld_executable_1_json_to_xml/veld.yaml
       service: veld
     volumes:
-      - ./veld_data_1_json/data.json:/veld/input/in.json
+      - ./veld_data_1_json/data.json:/veld/input/data.json
       - ./veld_data_2_xml/data.xml:/veld/output/out.xml
 
 
