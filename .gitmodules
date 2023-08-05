@@ -1,0 +1,9 @@
+[submodule "veld_executable_1_json_to_xml"]
+	path = veld_executable_1_json_to_xml
+	url = git@github.com:steffres/veld_executable_1_json_to_xml.git
+[submodule "veld_data_1_json"]
+	path = veld_data_1_json
+	url = git@github.com:steffres/veld_data_1_json.git
+[submodule "veld_data_2_xml"]
+	path = veld_data_2_xml
+	url = git@github.com:steffres/veld_data_2_xml.git
