@@ -10,6 +10,6 @@ services:
       service: veld
     volumes:
       - ./veld_data_1_json/data.json:/veld/input/data.json
-      - ./veld_data_2_xml/data.xml:/veld/output/out.xml
+      - ./veld_data_2_xml/data.xml:/veld/output/data.xml
 
 
