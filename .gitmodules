@@ -1,6 +1,6 @@
-[submodule "veld_dummy_executable_1_json_to_xml"]
-	path = veld_dummy_executable_1_json_to_xml
-	url = git@github.com:steffres/veld_dummy_executable_1_json_to_xml.git
+[submodule "veld_dummy_executable_2_json_to_xml"]
+	path = veld_dummy_executable_2_json_to_xml
+	url = git@github.com:steffres/veld_dummy_executable_2_json_to_xml.git
 [submodule "veld_dummy_data_1_json"]
 	path = veld_dummy_data_1_json
 	url = git@github.com:steffres/veld_dummy_data_1_json.git
