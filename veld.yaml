@@ -6,10 +6,10 @@ x-veld:
 services:
   veld:
     extends:
-      file: ./veld_executable_1_json_to_xml/veld.yaml
+      file: ./veld_dummy_executable_1_json_to_xml/veld.yaml
       service: veld
     volumes:
-      - ./veld_data_1_json/data.json:/veld/input/data.json
-      - ./veld_data_2_xml/data.xml:/veld/output/data.xml
+      - ./veld_dummy_data_1_json/data.json:/veld/input/data.json
+      - ./veld_dummy_data_2_xml/data.xml:/veld/output/data.xml
 
 
