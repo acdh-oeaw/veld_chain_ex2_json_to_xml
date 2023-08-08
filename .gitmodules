@@ -1,9 +1,9 @@
-[submodule "veld_dummy_executable_2_json_to_xml"]
-	path = veld_dummy_executable_2_json_to_xml
-	url = git@github.com:steffres/veld_dummy_executable_2_json_to_xml.git
-[submodule "veld_dummy_data_1_json"]
-	path = veld_dummy_data_1_json
-	url = git@github.com:steffres/veld_dummy_data_1_json.git
-[submodule "veld_dummy_data_2_xml"]
-	path = veld_dummy_data_2_xml
-	url = git@github.com:steffres/veld_dummy_data_2_xml.git
+[submodule "veld_executable_ex2_json_to_xml"]
+	path = veld_executable_ex2_json_to_xml
+	url = git@github.com:steffres/veld_executable_ex2_json_to_xml.git
+[submodule "veld_data_ex1_json"]
+	path = veld_data_ex1_json
+	url = git@github.com:steffres/veld_data_ex1_json.git
+[submodule "veld_data_ex2_xml"]
+	path = veld_data_ex2_xml
+	url = git@github.com:steffres/veld_data_ex2_xml.git
