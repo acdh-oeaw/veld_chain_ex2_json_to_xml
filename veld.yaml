@@ -2,12 +2,16 @@ x-veld:
   chain:
     about:
       description: "example veld for testing and showcasing"
+      topics: "ETL"
 
 services:
   veld:
     extends:
       file: ./veld_executable_ex2_json_to_xml/veld.yaml
       service: veld
+
+    # A mapping where the data folder of data veld 1 is mapped into /veld/input of the executable,
+    # and that of data veld 2 is mapped into /veld/output
     volumes:
       - ./veld_data_ex1_json/data.json:/veld/input/data.json
       - ./veld_data_ex2_xml/data.xml:/veld/output/data.xml
