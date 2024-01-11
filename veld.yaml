@@ -15,5 +15,10 @@ services:
     volumes:
       - ./veld_data_ex1_json/data.json:/veld/input/data.json
       - ./veld_data_ex2_xml/data.xml:/veld/output/data.xml
+    networks:
+      - exp_1_prefect_network
 
+networks:
+  exp_1_prefect_network:
+    external: true
 
