@@ -15,8 +15,12 @@ services:
     volumes:
       - ./veld_data_ex1_json/data.json:/veld/input/data.json
       - ./veld_data_ex2_xml/data.xml:/veld/output/data.xml
+      - ./veld_executable_ex2_json_to_xml/:/veld/executable/
+    working_dir: /veld/executable/
     networks:
       - exp_1_prefect_network
+    environment:
+      - PREFECT_API_URL=http://prefect_server:4200/api
 
 networks:
   exp_1_prefect_network:
