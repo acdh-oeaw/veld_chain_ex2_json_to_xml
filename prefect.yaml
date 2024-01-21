@@ -21,7 +21,7 @@ push: null
 # for cloning this project in remote locations
 pull:
   - prefect.projects.steps.git_clone_project:
-      repository: https://github.com/SteffRhes/veld_chain_ex2_json_to_xml.git
+      repository: https://github.com/acdh-oeaw/veld_chain_ex2_json_to_xml.git 
       branch: prefect_yaml
       #access_token: "{{ prefect.blocks.secret.simple-github-pat }}"
 
