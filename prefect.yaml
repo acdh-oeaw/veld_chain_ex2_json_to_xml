@@ -1,0 +1,41 @@
+# File for configuring project / deployment build, push and pull steps
+
+# Generic metadata about this project
+name: veld_chain_ex2_json_to_xml__prefect_yaml
+prefect-version: 2.11.0
+
+# build section allows you to manage and build docker images
+build:
+- prefect_docker.deployments.steps.build_docker_image:
+    id: build_image
+    requires: prefect-docker>=0.3.1
+    image_name: prefect_image_from_init
+    tag: prefect_image_from_init
+    dockerfile: auto
+
+# push section allows you to manage if
+# and how this project is uploaded to remote locations
+push: null
+
+# pull section allows you to provide instructions
+# for cloning this project in remote locations
+pull:
+  - prefect.projects.steps.git_clone_project:
+      repository: https://github.com/SteffRhes/veld_chain_ex2_json_to_xml.git
+      branch: prefect_yaml
+      #access_token: "{{ prefect.blocks.secret.simple-github-pat }}"
+
+deployments:
+  - name: Simple
+    description: Sends a GET request to the provided URL and returns the JSON response
+    entrypoint: flow.py:call_api
+    parameters: {}
+    schedule:
+    tags: []
+    version:
+    work_pool:
+      job_variables:
+        image: prefecthq/prefect:2-latest
+      name: my-docker-pool-sresch
+      work_queue_name:
+
