@@ -26,9 +26,9 @@ pull:
       #access_token: "{{ prefect.blocks.secret.simple-github-pat }}"
 
 deployments:
-  - name: Simple
+  - name: veld_chain_ex2_json_to_xml__prefect_yaml
     description: Sends a GET request to the provided URL and returns the JSON response
-    entrypoint: flow.py:call_api
+    entrypoint: foo/convert.py:convert
     parameters: {}
     schedule:
     tags: []
